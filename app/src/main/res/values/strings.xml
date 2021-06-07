@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string name="title_activity_add_sub">Додавання і віднімання</string>
+    <string name="title_activity_determinant">Визначник</string>
+    <string name="title_activity_inverse">Обернена матриця</string>
+    <string name="title_activity_about">Про автора</string>
+    <string name="title_button_about">Про автора</string>
+    <string name="title_button_determinant">Визначник</string>
+    <string name="title_button_inverse">Обернена матриця</string>
+    <string name="title_button_addsub">Додавання і віднімання</string>
+    <string name="title_button_mult">Множення матриць</string>
+    <string name="title_button_graphics">Теплова карта матриці</string>
+    <string name="greeting_text">Фінальний проект до іспиту\nстудента групи ТТП-3\nДубініна Іллі Дмитровича</string>
+    <string name="action_settings">Settings</string>
+    <string name="dir_name">MatrixCalculator</string>
+    <string name="det_file_out">DetResult.txt</string>
+    <string name="inv_file_out">InvResult.txt</string>
+    <string name="add_sub_file_out">AddSubResult.txt</string>
+    <string name="mult_file_out">MultResult.txt</string>
+    <string name="title_activity_multiply">Множення</string>
+    <string name="title_activity_heatmap">ScrollingActivity</string>
+</resources>

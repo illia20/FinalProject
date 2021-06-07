@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintDeterminantActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeterminantActivity">
+
+    <TableLayout
+        android:id="@+id/tableDet"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="27dp"
+        tools:ignore="MissingConstraints">
+    </TableLayout>
+    <Button
+        android:id="@+id/addRowCol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="expandTable"
+        android:text="Додати рядок і стовпчик"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tableDet" />
+    <Button
+        android:id="@+id/remRowCol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cutTable"
+        android:text="Видалити рядок і стовпчик"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addRowCol" />
+    <Button
+        android:id="@+id/calcDet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calcDeterminant"
+        android:text="Обчислити визначник"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/remRowCol" />
+    <Button
+        android:id="@+id/writeToFileDet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="createFile"
+        android:text="Записати у файл"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calcDet" />
+    <Button
+        android:id="@+id/readFromFileDet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openFile"
+        android:text="Зчитати з файлу"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/writeToFileDet" />
+    <TextView
+        android:id="@+id/detRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/readFromFileDet"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

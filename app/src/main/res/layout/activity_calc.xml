@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalcActivity">
+    <TextView
+        android:id="@+id/aboutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="20sp"
+        android:padding="10sp"
+        android:text="Мінімальні та максимальні показники Webometrics для українських ВНЗ."/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/aboutText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/tableMinMax"
+        >
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView/>
+            <TextView
+                android:padding="10sp"
+                android:textSize="20sp"
+                android:text="MAX"/>
+            <TextView
+                android:padding="10sp"
+                android:textSize="20sp"
+                android:text="MIN"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10sp"
+                android:textSize="20sp"
+                android:text="World Rank"/>
+            <TextView
+                android:padding="10sp"
+                android:textSize="20sp"
+                android:id="@+id/wrMax"/>
+            <TextView
+                android:padding="10sp"
+                android:textSize="20sp"
+                android:id="@+id/wrMin"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10sp"
+                android:textSize="20sp"
+                android:text="Impact Rank"/>
+            <TextView
+                android:padding="10sp"
+                android:textSize="20sp"
+                android:id="@+id/irMax"/>
+            <TextView
+                android:padding="10sp"
+                android:textSize="20sp"
+                android:id="@+id/irMin"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10sp"
+                android:textSize="20sp"
+                android:text="Openness Rank"/>
+            <TextView
+                android:padding="10sp"
+                android:textSize="20sp"
+                android:id="@+id/orMax"/>
+            <TextView
+                android:padding="10sp"
+                android:textSize="20sp"
+                android:id="@+id/orMin"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10sp"
+                android:textSize="20sp"
+                android:text="Excellence Rank"/>
+            <TextView
+                android:padding="10sp"
+                android:textSize="20sp"
+                android:id="@+id/erMax"/>
+            <TextView
+                android:padding="10sp"
+                android:textSize="20sp"
+                android:id="@+id/erMin"/>
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

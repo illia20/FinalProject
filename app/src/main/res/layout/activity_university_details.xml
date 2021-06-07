@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UniversityDetailsActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:textSize="20sp"
+        android:text="Назва"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/univTitle"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:textSize="14sp"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/univTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/univName"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:textSize="20sp"
+        android:text="Місто"
+        app:layout_constraintTop_toBottomOf="@id/univName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/univCityTitle"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:textSize="14sp"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/univCityTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/univCityName"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:textSize="20sp"
+        android:text="Кількість студентів"
+        app:layout_constraintTop_toBottomOf="@id/univCityName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/univNumberTitle"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:textSize="14sp"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/univNumberTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/univNumberName"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:textSize="20sp"
+        android:text="World Rank"
+        app:layout_constraintTop_toBottomOf="@id/univNumberName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/univWRTitle"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:textSize="14sp"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/univWRTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/univWRName"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:textSize="20sp"
+        android:text="Impact Rank"
+        app:layout_constraintTop_toBottomOf="@id/univWRName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/univIRTitle"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:textSize="14sp"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/univIRTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/univIRName"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:textSize="20sp"
+        android:text="Openness Rank"
+        app:layout_constraintTop_toBottomOf="@id/univIRName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/univORTitle"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:textSize="14sp"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/univORTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/univORName"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:textSize="20sp"
+        android:text="Excellence Rank"
+        app:layout_constraintTop_toBottomOf="@id/univORName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/univERTitle"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:textSize="14sp"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/univERTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/univERName"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/univERName"
+        app:layout_constraintRight_toRightOf="parent">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonRm"
+            android:padding="10sp"
+            android:layout_margin="4sp"
+            android:textSize="14sp"
+            android:text="Видалити"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:onClick="remove"
+            />
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonEdit"
+        android:padding="10sp"
+        android:layout_margin="4sp"
+        android:textSize="14sp"
+        android:text="Змінити"
+        android:onClick="edit"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonMap"
+        android:padding="10sp"
+        android:layout_margin="4sp"
+        android:textSize="14sp"
+        android:text="На карті"
+        android:onClick="showMap"
+        />
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

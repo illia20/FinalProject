@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10sp">
+
+    <TextView android:id="@+id/nameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Назва"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView android:id="@+id/cityView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Місто"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView android:id="@+id/nstud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Кількість студентів"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView android:id="@+id/wrView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WorldRank"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView android:id="@+id/irView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ImpactRank"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView android:id="@+id/orView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OpennessRank"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView android:id="@+id/erView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ExcellenceRank"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</LinearLayout>
